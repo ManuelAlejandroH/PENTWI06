@@ -10,21 +10,46 @@
 <script src="app.js"></script>
 
 <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                  </div>
+                  <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+              </nav>
+          
+              <div class="container">
+          
+                <div class="starter-template">
+                  <h1>Busqueda de Libro</h1>
+                  <p class="lead"></p>
+                  <div class="row">
+                        <div class="col-xs-3">
+                          <input type="text" class="form-control" placeholder=".col-xs-3">
+                        </div>
+                        <div class="col-xs-4">
+                          <input type="text" class="form-control" placeholder=".col-xs-4">
+                        </div>
+                        
+                      </div>
+                </div>
+          
+              </div><!-- /.container -->
+          
 
-    <div id="header-wrapper" ng-controller="LibrosCtrl">
-        <span class="logo pull-left">{{Libro.title}}</span>
-        <span class="tagLine pull-left">{{Libro.tagLine}}</span>
-        <div class="nav-wrapper pull-left">
-            <ul class="nav nav-pills">
-                <li class="active">
-                    <a herf=#>Libros</a>
-                </li>
-                <li>
-                    <a herf=#>Carro</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 
 </body>
