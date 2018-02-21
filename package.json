@@ -1,0 +1,19 @@
+{
+  "name": "pentwi06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelAlejandroH/PENTWI06.git"
+  },
+  "author": "Manuel Alejandro Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelAlejandroH/PENTWI06/issues"
+  },
+  "homepage": "https://github.com/ManuelAlejandroH/PENTWI06#readme"
+}
