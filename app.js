@@ -1,25 +1,21 @@
 var myApp = angular.module('myApp', []);
 
 myApp.controller('LibrosCtrl', 
-function ($scope, $http) {
-    var urlLibros = 'https://www.googleapis.com/books/v1/volumes?q=' + $scope.criterio;
-    
+function ($scope, $http) {  
     
     $scope.cargarLibros = function () { 
+        
+        var urlLibros = 'https://www.googleapis.com/books/v1/volumes?q=' + $scope.criterio;
         $http.get(urlLibros)
-        .then(function(success){
-            console.log(success.data.items[1].id);
-            var test = success.data.items;
-            console.log(test[1].id);
-        for(var i =0; i < test.lenght; i++){
-           
-            console.log(test.lenght);
+        .then(function(success){          
+        $scope.titulos = success.data.items;  
+        
+        for(var i =0; i < success.data.items.length; i++){           
+            console.log(success.data.items[i].volumeInfo.title);
         }              
-         
+         console.log($scope.titulos);
         }, function(error){
           console.log(error);
         })
     };
 });
-
-//https://www.youtube.com/watch?v=bJ5K7IERMRE
